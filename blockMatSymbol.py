@@ -106,11 +106,11 @@ def blockMatSymbolAsSqBlocks(
                 _dots('v', subsize, subsize)
             ],
             [
-                sp.MatrixSymbol(f"{matLetter}"+"_{i,1}", subsize, subsize),
+                sp.MatrixSymbol(f"{matLetter}"+"_{n,1}", subsize, subsize),
                 _dots('h', subsize, subsize),
-                sp.MatrixSymbol(f"{matLetter}"+"_{i,j}", subsize, subsize),
+                sp.MatrixSymbol(f"{matLetter}"+"_{n,j}", subsize, subsize),
                 _dots('h', subsize, subsize),
-                sp.MatrixSymbol(f"{matLetter}"+"_{i,m}", subsize, subsize)
+                sp.MatrixSymbol(f"{matLetter}"+"_{n,m}", subsize, subsize)
             ],
             ])
     else:
