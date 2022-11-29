@@ -114,7 +114,7 @@ $$\left[\begin{matrix}A_{1,1} & \dots & A_{1,j} & \dots & A_{1,m}\\
 \vdots &   & \vdots &   & \vdots\\
 A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\\
 \vdots &   & \vdots &   & \vdots\\
-A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\end{matrix}\right]$$
+A_{n,1} & \dots & A_{n,j} & \dots & A_{n,m}\end{matrix}\right]$$
 
 Here we go :rocket:
 
