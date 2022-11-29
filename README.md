@@ -41,7 +41,7 @@ Using the latex interpreter that's baked into sympy, we can get latex that the j
 cA
 ```
 
-$$\displaystyle \left[\begin{matrix}a_{1} & \dots & a_{j} & \dots & a_{m}\end{matrix}\right]$$
+$$\left[\begin{matrix}a_{1} & \dots & a_{j} & \dots & a_{m}\end{matrix}\right]$$
 
 Impressive no ? What about a row vector decomposition ?
 
@@ -55,7 +55,10 @@ Let's see what we've got here:
 rA
 ```
 
-$$\displaystyle \left[\begin{matrix}\tilde{a}_1^T\\\vdots\\\tilde{a}_i^T\\\vdots\\\tilde{a}_n^T\end{matrix}\right]$$
+$$\left[\begin{matrix}\tilde{a}_1^T\\
+\vdots\\\tilde{a}_i^T\\
+\vdots\\
+\tilde{a}_n^T\end{matrix}\right]$$
 
 Alright, so now we can render a block matrix as a bunch of row or column vectors. The least we can ask is that the dimensions are correct, right ?
 
@@ -89,7 +92,9 @@ Here we go :scream:
 bmA
 ```
 
-$$\displaystyle \left[\begin{matrix}A_{1,1} & \dots & A_{1,j} & \dots & A_{1,m}\\\vdots & \ddots & \vdots & \ddots & \vdots\\A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\\\vdots & \ddots & \vdots & \ddots & \vdots\\A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\end{matrix}\right]$$
+$$\left[\begin{matrix}A_{1,1} & \dots & A_{1,j} & \dots & A_{1,m}\\
+\vdots & \ddots & \vdots & \ddots & \vdots\\A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\\
+\vdots & \ddots & \vdots & \ddots & \vdots\\A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\end{matrix}\right]$$
 
 **WOAH**. That's a lot of blocks. But what if we want to avoid the clutter ? Removing the diagonal dots its an option :smile:
 
@@ -103,9 +108,11 @@ bmA = blockMatSymbolAsSqBlocks('A', subsize=n, nodiag=True)
 bmA
 ```
 
-$$\displaystyle \left[\begin{matrix}A_{1,1} & \dots & A_{1,j} & \dots & A_{1,m}\\\vdots &   & \vdots &   & \vdots\\A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\\\vdots &   & \vdots &   & \vdots\\A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\end{matrix}\right]$$
+$$\left[\begin{matrix}A_{1,1} & \dots & A_{1,j} & \dots & A_{1,m}\\
+\vdots &   & \vdots &   & \vdots\\A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\\
+\vdots &   & \vdots &   & \vdots\\A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\end{matrix}\right]$$
 
-Here we go :nerd: :rocket:
+Here we go :rocket:
 
 ## How to contribute
 
