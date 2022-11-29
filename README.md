@@ -56,7 +56,8 @@ rA
 ```
 
 $$\left[\begin{matrix}\tilde{a}_1^T\\
-\vdots\\\tilde{a}_i^T\\
+\vdots\\
+\tilde{a}_i^T\\
 \vdots\\
 \tilde{a}_n^T\end{matrix}\right]$$
 
@@ -93,8 +94,10 @@ bmA
 ```
 
 $$\left[\begin{matrix}A_{1,1} & \dots & A_{1,j} & \dots & A_{1,m}\\
-\vdots & \ddots & \vdots & \ddots & \vdots\\A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\\
-\vdots & \ddots & \vdots & \ddots & \vdots\\A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\end{matrix}\right]$$
+\vdots & \ddots & \vdots & \ddots & \vdots\\
+A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\\
+\vdots & \ddots & \vdots & \ddots & \vdots\\
+A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\end{matrix}\right]$$
 
 **WOAH**. That's a lot of blocks. But what if we want to avoid the clutter ? Removing the diagonal dots its an option :smile:
 
@@ -109,8 +112,10 @@ bmA
 ```
 
 $$\left[\begin{matrix}A_{1,1} & \dots & A_{1,j} & \dots & A_{1,m}\\
-\vdots &   & \vdots &   & \vdots\\A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\\
-\vdots &   & \vdots &   & \vdots\\A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\end{matrix}\right]$$
+\vdots &   & \vdots &   & \vdots\\
+A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\\
+\vdots &   & \vdots &   & \vdots\\
+A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\end{matrix\right]$$
 
 Here we go :rocket:
 
