@@ -105,8 +105,7 @@ A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\end{matrix}\right]$$
 bmA = blockMatSymbolAsSqBlocks('A', subsize=n, nodiag=True)
 # no diagonal blocks displayed
 ```
-
-
+Last but not least ..
 ```python
 bmA
 ```
@@ -115,9 +114,19 @@ $$\left[\begin{matrix}A_{1,1} & \dots & A_{1,j} & \dots & A_{1,m}\\
 \vdots &   & \vdots &   & \vdots\\
 A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\\
 \vdots &   & \vdots &   & \vdots\\
-A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\end{matrix\right]$$
+A_{i,1} & \dots & A_{i,j} & \dots & A_{i,m}\end{matrix}\right]$$
 
 Here we go :rocket:
+
+## A note
+
+This was generated using the notebook `demo.ipynb` in the repo. You can find it [here](demo.ipynb).
+
+You can turn any notebook into a markdown file using the following command:
+
+```bash
+jupyter nbconvert --to markdown demo.ipynb
+```
 
 ## How to contribute
 
